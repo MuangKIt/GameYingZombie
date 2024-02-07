@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/* ส่วนของอินเตอร์เฟซ */
+
+body {
+	background-image: url("Image/yozora19201080.jpg");
+	background-repeat: no-repeat;
+  background-size: auto;
+	user-select: none;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+ 	height: auto;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+	left: 50%;	
+  height: 95vh;
+  max-height: 95vw;
+  width: 95vw;
+  max-width: 95vh;
+  transform: translate(-50%, -50%);
+	background-image: url("Image/night-cemetery-graveyard-with-tombstones-fog_107791-5839.jpg");
+	background-position: center;
+	background-size: cover;
+  overflow: hidden;
+}	
+
+.container div {
+	position: absolute;
+}
+
+.thumbs_ups {
+  left: 17%;
+  top: 30%;
+}
+
+#thumbs_ups {
+  height: 25vmin;
+  width: auto;
+}
+
+.menu_box {
+  height: 65vmin;
+  width: 50vmin;
+  background-color: rgba(0,0,0,0.60);
+  left: 25%;
+  top: 15%;
+  text-align: center;
+  border-radius: 1cap;
+}
+
+.retry{
+  height: 10vmin;
+  width: 48vmin;
+  background: rgba(161, 161, 161, 0.425);
+  left: 2%;
+  bottom: 10%;
+}
+
+.retry:hover {
+  background: rgba(148,148,148,0.80);
+}
+
+.retry:active {
+  background: rgba(148,148,148,0.80);
+}
+
+.play {
+  height: 15vmin;
+  width: 48vmin;
+  background: rgba(150, 150, 150, 0.8);
+  bottom: 28%;
+  left: 2%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20vmin; 
+}
+.play:hover {
+	background: rgba(245, 245, 245, 0.60);
+}
+
+.how_to_play {
+  height: 15vmin;
+  width: 48vmin;
+  background: rgba(150, 150, 150, 0.8);
+  bottom: 2%;
+  left: 2%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20vmin;
+}
+.how_to_play:hover {
+	background: rgba(245, 245, 245, 0.60);
+}
+
+#zombie {
+	top:44%;
+	left:22%;
+}
+
+#zombie_size {
+	height:15vmin;
+}
+
+.gun {
+  width: 100vmin;
+  height: auto;
+	top:25%;
+}
+
+/* ส่วนของช่องคำถาม */
+
+h1 {
+  color: white;
+  font-size: 5vmin;
+}
+
+h3 {
+  color: white;
+  font-size: 10vmin;
+  background-color: rgba(0,0,0,0.40);
+  margin-left: 2%;
+}
+
+h4 {
+  font-size: 7vmin;
+}
+.textbox {
+	height: 30vmin;
+  width: 93vmin;
+	background: rgba(0,0,0,0.60);
+	top:1%;
+	left:1%;
+  border-radius: 1cap;
+}
+
+.question {
+  height: 28vmin;
+  width: 90vmin;
+	top:1%;
+	left:2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choicebox {
+	height: 20vmin;
+  width: 93vmin;
+	background: rgba(0,0,0,0.60);
+	bottom:1%;
+	left:1%;
+  border-radius: 1cap;
+}
+
+#choice1 {
+  height: 18vmin;
+  width: 29vmin;
+  background: rgba(0, 0, 0, 0.3);
+  bottom:5%;
+	left:1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1cap;
+}
+
+#choice2 {
+  height: 18vmin;
+  width: 29vmin;
+  background: rgba(0, 0, 0, 0.3);
+  bottom:5%;
+	left:34.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1cap;
+}
+
+#choice3 {
+  height: 18vmin;
+  width: 29vmin;
+  background: rgba(0, 0, 0, 0.3);
+  bottom:5%;
+	right: 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1cap;
+}
+
+#choice1:hover, #choice2:hover, #choice3:hover {
+  background: rgba(219, 215, 215, 0.1);
+}
+
+#choice1:active, #choice2:active, #choice3:active {
+  background: rgba(219, 215, 215, 0.1);
+}
+
+
+/* นาฬิกาาาาาาาาาาา */
+
+    #timer {
+      height: 15vmin;
+      width: 15vmin;
+      background: rgba(0, 0, 0, 0.60);
+      border-radius: 50%;
+      position: absolute;
+      left: 1%;
+      top: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2vmin;
+      color: white;
+    }
+
+    #progress-bar {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: white; 
+      border-radius: inherit;
+	    animation-delay: 2s;
+      animation: countdown 35s linear forwards;
+    }
+
+    @keyframes countdown {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+        background-color: brown;
+      }
+    }
+
+
+/* HOW TO PLAY WAAAAAAA*/
+
+.menu_box2 {
+  height: 80vmin;
+  width: 80vmin;
+  background-color: rgba(0,0,0,0.60);
+  left: 8%;
+  top: 10%;
+  text-align: center;
+  border-radius: 1cap;
+}
+
+.back{
+  height: 7vmin;
+  width: 30vmin;
+  background: rgba(161, 161, 161, 0.425);
+  left: 30%;
+  bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.back:hover {
+  background: rgba(148,148,148,0.80);
+}
+
+.back:active {
+  background: rgba(148,148,148,0.80);
+}
+
+.nani {
+  left: 5%;
+}
+
+.how {
+  height: 70vmin;
+}
+
+.qr {
+  top: 2%;
+  left: 21%;
+}
+
+.qr_size {
+  height: 29vmin;
+}
+
